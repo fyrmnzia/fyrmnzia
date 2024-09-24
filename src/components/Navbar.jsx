@@ -62,7 +62,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-[rgba(0,0,0,.1)] border-b-2 border-[#181818] w-full flex justify-between h-20 items-center">
+    <nav className="fixed top-0 z-50 backdrop-blur bg-[rgba(0,0,0,.1)] border-b-2 border-[#181818] w-full flex justify-between h-20 items-center">
       {/* logo */}
       <div className="ml-3">
         <a href="/">
@@ -86,7 +86,7 @@ const Navbar = () => {
             >
               {item.icon}
               <p
-                className={`transition-transform duration-75 ${
+                className={`transition-transform duration-100 ${
                   activeIndex === index ? "hidden" : ""
                 }`}
               >
